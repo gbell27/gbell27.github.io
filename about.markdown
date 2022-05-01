@@ -13,7 +13,7 @@ Ho una passione per la programmazione e i miei interessi principali sono questi.
  * [Kaggle](https://www.kaggle.com/), ci sono dataset interessanti.
 2. Linguaggi Funzionali.  
  > LISP:
-   Ho una fissazione per LISP e newlisp, ho letto qualche libro sull'argomento e un nuovo mondo si aperto.  
+   Ho una fissazione per LISP e newlisp, ho letto qualche libro sull'argomento e un nuovo mondo si è aperto.  
  > Clojure (che è un LISP) ma è molto simile a Ruby. [Clojure Brave and True](https://www.braveclojure.com/clojure-for-the-brave-and-true/)  
  > Scheme [SICP](https://mitpress.mit.edu/sites/default/files/sicp/index.html)
  
