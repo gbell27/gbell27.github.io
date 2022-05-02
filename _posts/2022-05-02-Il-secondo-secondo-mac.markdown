@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 ---
 
 # Il Secondo secondo Mac<sub>©</sub>

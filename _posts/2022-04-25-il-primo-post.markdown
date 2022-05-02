@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: false
 ---
 
 # Il mio primo post

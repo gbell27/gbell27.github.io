@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: false
 ---
 
 # La mia API
