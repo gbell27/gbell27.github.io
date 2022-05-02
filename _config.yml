@@ -21,8 +21,8 @@
 title: Blog di Gabriele
 email: gabriele.bellavia.m@gmail.com
 description: Un blog personale dove scrivere lo stato dei miei progetti
-baseurl: ""
-url: ""
+baseurl: "/"
+url: "https://gbell27.github.io"
 twitter_username: gabriele_bellav
 github_username:  gbell27
 
@@ -31,6 +31,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+disqus:
+  shortname: gbell27
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
