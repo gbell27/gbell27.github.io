@@ -1,0 +1,122 @@
+\documentclass[12pt, a4paper]{article}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Il saggio di Bradford in poche parole.}
+\author{Gabriele Maria Bellavia}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Tutto il materiale presentato si basa su ciò che ho imparato nella mia carriera universitaria.\\
+I dati riportati nella sezione `Protocollo' sono stati ricopiati da un foglio intitolato `Protocollo Esercitazione' di cui sono entrato in possesso durante il periodo in cui ho svolto l'attività di tirocinio presso il laboratorio di Genomica dell'edificio 16 dell'Università degli Studi di Palermo.
+
+
+Il `Saggio proteico di Bradford' o `Bradford Protein assay' è un metodo di laboratorio, descritto per la prima volta dal Dr.{}Marion Bradford nel 1976, per stabilire la concentrazione totale di un campione proteico in soluzione confrontandolo con una serie di soluzioni di una proteina (BSA) a concentrazione nota.
+
+
+\section{Reagenti}
+I due reagenti fondamentali previsti da questa tecnica sono il \mbox{`Blue di Coomassie'} e la `BSA' - l'albumina di siero bovino.
+Descriverò brevemente solo la preparazione del primo.
+Altri reagenti sono importanti, ma non sono propri di questa tecnica, come il tampone M-RIPA (buffer).
+
+
+\textbf{N.B.}
+Esistono due versioni della tecnica: \emph{macro} e \emph{micro}.
+La differenza è il potere risolutivo del metodo, infatti la seconda è adatta a quantificare concentrazioni molto basse di proteine.
+Di conseguenza, nella prima si utilizza una soluzione standard di BSA a concentrazione 4mg/mL, inoltre si aggiungono 4mL di reattivo di Bradford alla soluzione da misurare; nella \emph{micro} la BSA è $0,4$mg/mL e si aggiunge solo 1mL di reattivo.
+
+\subsection*{Blue di Coomassie}
+\includegraphics[width=200px]{coomassie}
+
+
+\`E il vero e proprio `Reattivo di Bradford', ha il nome `Coomassie Brilliant Blue G-250'.
+Forma un complesso con i residui aminoacidici basici e aromatici (specialmente di lisina e arginina) presenti in una proteina.
+Esiste in tre forme:
+\begin{itemize}
+\item cationica, (picco di assorbanza $\lambda=465$nm, colore rosso--marrone)
+\item neutra, (picco di assorbanza $\lambda=650$nm, colore verde)
+\item anionica, (picco di assorbanza $\lambda=595$nm, colore blu)
+\end{itemize}
+
+Il complesso proteina--colorante causa uno shift del picco di assorbanza da 465nm a 595nm, favorendo così la forma deprotonata del colorante e sviluppando il colore blu.
+
+
+
+In breve (giusto per saperlo, non è una descrizione accurata), 1L di colorante si prepara: \\
+Aggiungendo 100mg di Coomassie Brilliant Blue G-250 in 50mL di Etanolo. \\
+Successivamente si aggiungono 100mL di acido fosforico all' 85\% e si porta a volume. \\
+Si filtra e si conserva a 4°C.
+
+\subsection*{BSA - Albumina di siero bovino}
+\`E una proteina generica, ha una singola catena polipeptidica costituita da circa 583 amminoacidi, priva di carboidrati.
+
+\begin{center}
+\includegraphics[width=250pt]{albumina}
+\begin{figure}[!h]
+\cite{pianeta-chimica}
+\end{figure}
+\end{center}
+
+\section{Protocollo}
+Si procede con la preparazione di 8 soluzioni a concentrazione crescente e una soluzione priva di BSA detta `BLANK', a cui corrisponderà un segnale di base, per eliminare il rumore di fondo dovuto all'errore intriseco dello strumento (spettrofotometro).
+
+\begin{table}[!h]
+\begin{tabular}{c|c|c|c}
+CONCENTRAZIONE [mg/mL] & BSA [µL] & TAMPONE [µL] & H2O [µL] \\
+\hline
+0.1 & 2.5 & 10 & 87.5 \\
+0.2 & 5 & 10 & 85 \\
+0.4 & 10 & 10 & 80 \\
+0.6 & 15 & 10 & 75 \\
+0.8 & 20 & 10 & 70 \\
+1 & 25 & 10 & 65 \\
+1.2 & 30 & 10 & 60 \\
+1.4 & 35 & 10 & 55 \\
+BLANK & --- & 10 & 90 \\
+\end{tabular}
+\caption{Soluzioni a concentrazione crescente.}
+\end{table}
+
+\begin{center}
+\includegraphics[width=400pt]{regressionebradford}
+\begin{figure}[!h] 
+\cite{bsa-paper}
+\end{figure}
+\end{center}
+
+Dopo la costruzione della curva standard, si possono misurare i campioni a concentrazione sconosciuta.
+La curva serve (il metodo numerico si chiama `Regressione lineare')  a creare una corrispondenza tra un valore misurato di assorbanza del nostro campione, in ordinata, e un valore di concentrazione, in ascissa.
+Si aggiunge 1mL (nella versione Macro si aggiungono 4mL) di reattivo di Bradford, dopo 5--10 minuti si pipettano 2mL in una cuvette e si legge l'assorbanza allo spettrofotometro a 595nm.
+
+
+\section{Contesto di laboratorio}
+Questa descrizione non ha finora collocato il saggio in una posizione precisa all'interno di un esperimento.
+Per fare un esempio, basandomi sulla mia esperienza di laboratorio, un suo utilizzo sarebbe previsto in questa sequenza:
+
+\begin{enumerate}
+\item Prelievo di cellule da una coltura (e.g. MDA)
+\item Lisi delle cellule con un tampone (ecco, l' M-RIPA viene introdotto in questo punto, è nella soluzione di lisi, nel caso delle suddette cellule)
+\item Centrifugazione e recupero del sovranatante. Se necessario, effettuare anche una concentrazione del campione (esiste una centrifuga particolare)
+\item misurazione della concentrazione proteica. (BRADFORD!!!)
+\item PCR, western blot e altre analisi \ldots
+\end{enumerate}
+
+Ovviamente la preparazione di una curva standard deve tener conto del solvente in cui sono disciolte le proteine del campione a concentrazione sconosciuta.
+Infatti, nell'esempio considero un'estrazione proteica per uno studio di proteomica da cellule MDA.
+La BSA dovrà essere disciolta in un tampone contenente M-RIPA, ciò permette di quantificare meglio il campione.
+
+\begin{thebibliography}{2}
+\bibitem{pianeta-chimica} \url{https://www.pianetachimica.it/mol_mese/mol_mese_2003/01_Albumina/Albumina_1_ita.html}
+\bibitem{bsa-paper} \url{https://www.researchgate.net/profile/Ibrahim-Naqid/publication/305287157/}
+\end{thebibliography}
+
+
+\end{document}
