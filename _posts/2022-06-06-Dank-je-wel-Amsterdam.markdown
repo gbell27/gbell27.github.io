@@ -1,4 +1,6 @@
 ---
+layout: post
+
 carousels:
   - images: 
     - image: /uploads/Immagine1.jpeg
