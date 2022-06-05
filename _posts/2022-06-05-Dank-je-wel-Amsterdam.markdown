@@ -1,6 +1,5 @@
 ---
 layout: post
-
 carousels:
   - images: 
     - image: /uploads/Immagine1.jpeg
@@ -31,3 +30,5 @@ carousels:
 
 #### Landscapes
 {% include carousel.html height="100" unit="%" duration="7" number="3" %}
+
+
