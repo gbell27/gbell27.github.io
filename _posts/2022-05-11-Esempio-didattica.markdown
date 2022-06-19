@@ -11,7 +11,7 @@ Io ho avuto quest'idea dopo molto tempo dalla fine del mio tirocinio, però se a
 Ciò a cui mi oppongo è prendere appunti sui quaderni, niente di tutto ciò che noi studenti scriviamo può essere dimostrabile come esperienza acquisita.  
 È solo il conseguimento di un esame o altri CFU che tacitamente certificano le abilità di una persona.
 
-Questo è un protocollo sul saggio di Bradford che ho scritto il LaTeX.
+Questo è un protocollo sul saggio di Bradford che ho scritto in LaTeX.
 
 {% include embedpdf.html docname='bradford' %}
 
